@@ -1,5 +1,6 @@
 {
   "item.requiem_lifeline.redstone_gold": "Tinted Gold Ingot",
+  "item.requiem_lifeline.toasted_gold": "Spirited Gold Ingot",
   
   "item.requiem_lifeline.tooltip.redstone_gold": "§7Lifeline - Cures Attrition %s"
 }

@@ -54,7 +54,7 @@ public class AttritionCureItem extends Item {
 			return stack;
 		}
 
-		AttritionStatusEffect.reduce(player, 1);
+		AttritionStatusEffect.reduce(player, getAttrition(player) - maxLevel + 1);
 		stack.decrement(1);
 
 		return stack;
@@ -78,5 +78,10 @@ public class AttritionCureItem extends Item {
 	@Override
 	public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
 		tooltip.add(Text.translatable("item.requiem_lifeline.tooltip.redstone_gold", Text.translatable("potion.potency." + (maxLevel))));
+	}
+
+	@Override
+	public boolean hasGlint(ItemStack stack) {
+		return maxLevel < 3;
 	}
 }

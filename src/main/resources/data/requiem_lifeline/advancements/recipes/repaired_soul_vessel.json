@@ -1,0 +1,34 @@
+{
+  "parent": "requiem_lifeline:recipes/root",
+  "rewards": {
+    "recipes": [
+      "requiem_lifeline:repaired_soul_vessel"
+    ]
+  },
+  "criteria": {
+    "has_vessel": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "requiem:shattered_soul_vessel"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "requiem_lifeline:repaired_soul_vessel"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_vessel",
+      "has_the_recipe"
+    ]
+  ]
+}

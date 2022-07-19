@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "requiem_lifeline:redstone_gold"
+    },
+	{
+      "item": "requiem:filled_soul_vessel"
+    }
+  ],
+  "result": {
+    "item": "requiem_lifeline:toasted_gold",
+    "count": 1
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "requiem:shattered_soul_vessel"
+    },
+	{
+      "item": "minecraft:magma_cream"
+    }
+  ],
+  "result": {
+    "item": "requiem:empty_soul_vessel",
+    "count": 1
+  }
+}

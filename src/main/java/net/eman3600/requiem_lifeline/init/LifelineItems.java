@@ -11,6 +11,7 @@ import org.quiltmc.qsl.item.setting.api.QuiltItemSettings;
 
 public class LifelineItems {
 	public static final Item REDSTONE_GOLD = registerItem("redstone_gold", new AttritionCureItem(new QuiltItemSettings().group(ItemGroup.MISC).rarity(Rarity.UNCOMMON), 3));
+	public static final Item TOASTED_GOLD = registerItem("toasted_gold", new AttritionCureItem(new QuiltItemSettings().group(ItemGroup.MISC).rarity(Rarity.RARE), 2));
 
 
 
