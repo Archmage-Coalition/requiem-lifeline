@@ -31,6 +31,10 @@
 			{
 				"id": "minecraft",
 				"versions": ">=1.19"
+			},
+			{
+				"id": "requiem",
+				"versions": ">=2.0.0-beta.11"
 			}
 		]
 	},
