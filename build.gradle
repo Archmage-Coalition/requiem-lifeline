@@ -8,11 +8,25 @@ version = project.version
 group = project.maven_group
 
 repositories {
-	// Add repositories to retrieve artifacts from in here.
-	// You should only use this when depending on other mods because
-	// Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
-	// See https://docs.gradle.org/current/userguide/declaring_repositories.html
-	// for more information about repositories.
+	maven {
+		name = 'Ladysnake Mods'
+		url = 'https://ladysnake.jfrog.io/artifactory/mods'
+		content {
+			includeGroup 'io.github.ladysnake'
+			includeGroupByRegex '(dev|io\\.github)\\.onyxstudios.*'
+			includeGroupByRegex 'dev\\.emi.*'
+		}
+	}
+	maven {
+		name = 'Nexus OSS Repository'
+		url = 'https://oss.sonatype.org/content/repositories/snapshots'
+	}
+	maven {
+		url = 'https://maven.jamieswhiteshirt.com/libs-release/'
+		content {
+			includeGroup 'com.jamieswhiteshirt'
+		}
+	}
 }
 
 // All the dependencies are declared at gradle/libs.version.toml and referenced with "libs.<id>"
@@ -29,6 +43,10 @@ dependencies {
 	// Quilted Fabric API will automatically pull in the correct QSL version.
 	modImplementation libs.quilted.fabric.api
 	// modImplementation libs.bundles.quilted.fabric.api // If you wish to use Fabric API's deprecated modules, you can replace the above line with this one
+
+	modImplementation "io.github.ladysnake:requiem-api:${requiem_version}"
+	modRuntimeOnly "io.github.ladysnake:requiem-core:${requiem_version}"
+	modRuntimeOnly "io.github.ladysnake:requiem:${requiem_version}"
 }
 
 processResources {
