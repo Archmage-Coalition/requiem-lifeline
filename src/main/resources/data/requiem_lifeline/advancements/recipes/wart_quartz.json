@@ -2,17 +2,17 @@
   "parent": "requiem_lifeline:recipes/root",
   "rewards": {
     "recipes": [
-      "requiem_lifeline:redstone_gold"
+      "requiem_lifeline:wart_quartz"
     ]
   },
   "criteria": {
-    "has_gold": {
+    "has_wart": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:gold_ingot"
+              "minecraft:nether_wart"
             ]
           }
         ]
@@ -21,13 +21,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "requiem_lifeline:redstone_gold"
+        "recipe": "requiem_lifeline:wart_quartz"
       }
     }
   },
   "requirements": [
     [
-      "has_gold",
+      "has_wart",
       "has_the_recipe"
     ]
   ]

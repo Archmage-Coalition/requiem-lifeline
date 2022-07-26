@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:quartz"
+    },
+	{
+      "item": "minecraft:nether_wart"
+    },
+	{
+      "item": "minecraft:brown_mushroom"
+    },
+	{
+      "item": "minecraft:sugar"
+    }
+  ],
+  "result": {
+    "item": "requiem_lifeline:wart_quartz",
+    "count": 1
+  }
+}
