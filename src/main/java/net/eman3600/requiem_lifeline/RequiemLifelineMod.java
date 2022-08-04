@@ -1,6 +1,9 @@
 package net.eman3600.requiem_lifeline;
 
 import net.eman3600.requiem_lifeline.init.LifelineItems;
+import net.eman3600.requiem_lifeline.init.LifelinePotions;
+import net.eman3600.requiem_lifeline.util.LifelineRegistries;
+import net.eman3600.requiem_lifeline.util.LootTableModifiers;
 import org.quiltmc.loader.api.ModContainer;
 import org.quiltmc.qsl.base.api.entrypoint.ModInitializer;
 import org.slf4j.Logger;
@@ -18,5 +21,9 @@ public class RequiemLifelineMod implements ModInitializer {
 		LOGGER.info("Initializing ", mod.metadata().name());
 
 		LifelineItems.registerItems();
+		LifelinePotions.registerPotions();
+
+		LootTableModifiers.modifyLootTables();
+		LifelineRegistries.register();
 	}
 }

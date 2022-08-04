@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " X ",
+    "X#X",
+    " X "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:nether_wart"
+    },
+	"X": {
+	  "item": "requiem_lifeline:blaze_chunk"
+	}
+  },
+  "result": {
+    "item": "requiem_lifeline:blaze_wart"
+  }
+}

@@ -16,6 +16,9 @@ public class LifelineItems {
 
 	public static final Item WART_QUARTZ = registerItem("wart_quartz", new SelfWeaknessItem(new QuiltItemSettings().group(ItemGroup.MISC).rarity(Rarity.UNCOMMON), 200, 0));
 
+	public static final Item BLAZE_CHUNK = registerItem("blaze_chunk", new Item(new QuiltItemSettings().group(ItemGroup.MATERIALS)));
+	public static final Item BLAZE_WART = registerItem("blaze_wart", new Item(new QuiltItemSettings().group(ItemGroup.MATERIALS)));
+
 
 
 	private static Item registerItem(String name, Item item) {

@@ -2,6 +2,8 @@
   "item.requiem_lifeline.redstone_gold": "Tinted Gold Ingot",
   "item.requiem_lifeline.toasted_gold": "Spirited Gold Ingot",
   "item.requiem_lifeline.wart_quartz": "Spotted Quartz",
+  "item.requiem_lifeline.blaze_chunk": "Blaze Fragment",
+  "item.requiem_lifeline.blaze_wart": "Blazing Wart",
   
   "item.requiem_lifeline.tooltip.attrition_cure": "§7Lifeline - Cures Attrition %s",
   "item.requiem_lifeline.tooltip.weakness": "§7Weakness Imbuement"

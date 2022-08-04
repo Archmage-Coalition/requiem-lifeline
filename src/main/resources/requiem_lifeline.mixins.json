@@ -3,7 +3,9 @@
 	"minVersion": "0.8",
 	"package": "net.eman3600.requiem_lifeline.mixin",
 	"compatibilityLevel": "JAVA_17",
-	"mixins": [],
+	"mixins": [
+      "BrewingRegistryMixin"
+    ],
 	"client": [],
 	"injectors": {
 		"defaultRequire": 1

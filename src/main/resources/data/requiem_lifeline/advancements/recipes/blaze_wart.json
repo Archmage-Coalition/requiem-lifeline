@@ -1,0 +1,34 @@
+{
+  "parent": "requiem_lifeline:recipes/root",
+  "rewards": {
+    "recipes": [
+      "requiem_lifeline:blaze_wart"
+    ]
+  },
+  "criteria": {
+    "has_wart": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:nether_wart"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "requiem_lifeline:blaze_wart"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wart",
+      "has_the_recipe"
+    ]
+  ]
+}
