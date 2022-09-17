@@ -30,11 +30,11 @@
 			},
 			{
 				"id": "minecraft",
-				"versions": ">=1.19"
+				"versions": ">=1.19.2"
 			},
 			{
 				"id": "requiem",
-				"versions": ">=2.0.0-beta.11"
+				"versions": ">=2.0.0-beta.14"
 			}
 		]
 	},
